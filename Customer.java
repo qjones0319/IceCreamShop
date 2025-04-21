@@ -1,3 +1,5 @@
+//Class for getting and setting the customer name along with printing out their name
+
 public class Customer {
 
     private String name;
@@ -12,5 +14,9 @@ public class Customer {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String toString() {
+        return "Customer: " + name;
     }
 }

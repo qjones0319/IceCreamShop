@@ -1,3 +1,5 @@
+//Class for getting and setting the toppings and printing out the cost associated with it as well
+
 public class Toppings {
 
     private String name;

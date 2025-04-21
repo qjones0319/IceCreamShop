@@ -1,3 +1,5 @@
+//Class for getting and setting the ice cream and cost and printing it out
+
 public class IceCream {
 
     private String flavor;

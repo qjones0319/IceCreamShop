@@ -1,3 +1,5 @@
+//Class for storing the orders of the customers based on the iceCream and toppings.
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,7 +50,6 @@ public class Order {
         return total;
     }
 
-
     public Customer getCustomer() {
         return customer;
     }
@@ -60,4 +61,5 @@ public class Order {
     public List <Toppings> getOrderedToppings() {
         return orderedToppings;
     }
+
 }

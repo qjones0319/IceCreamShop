@@ -1,8 +1,11 @@
+//Class for storing IceCream and Toppings in the Inventory
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class Inventory {
 
+    //These hashmaps will be used to store the IceCream and Toppings
     private Map<IceCream, Integer> checkIceScreamStock;
     private Map<Toppings, Integer> checkToppingsStock;
 
@@ -22,7 +25,7 @@ public class Inventory {
     public boolean IceCreamStock(IceCream iceCream) { //Check if available IceCream
         int count = checkIceScreamStock.getOrDefault(iceCream, 0);
         if(count > 0) {
-            checkIceScreamStock.put(iceCream, count - 1);
+            checkIceScreamStock.put(iceCream, count - 1); //This will decrement the quantity due to customer request
             return true;
         }
         return false;
@@ -31,7 +34,7 @@ public class Inventory {
     public boolean ToppingsStock(Toppings toppings) { //Check if available Toppings
         int count = checkToppingsStock.getOrDefault(toppings, 0);
         if(count > 0) {
-            checkToppingsStock.put(toppings, count - 1);
+            checkToppingsStock.put(toppings, count - 1); //This will decrement the quantity due to customer request
             return true;
         }
         return false;

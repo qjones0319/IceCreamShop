@@ -1,3 +1,5 @@
+//Class for regulating the shop with inventory and orders
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,9 +17,9 @@ public class ShopDetails {
         return inventory;
     }
     
-    public boolean isOrderProccessed(Order order) {
+    public boolean isOrderProccessed(Order order) { //Check if the inventory has enough for the order
         boolean processed = order.isAvailable(inventory);
-        if (processed) {
+        if (processed == true) {
             completeOrders.add(order);
         }
         return processed;
